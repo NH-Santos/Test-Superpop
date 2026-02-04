@@ -20,31 +20,16 @@
     margin: auto;
 }
 
-.campo-usuario {
+.campo-input {
     position: relative;
     width: 100%;
     max-width: 300px;
     margin: 10px auto;
 }
 
-.campo-usuario input {
+.campo-input input {
     width: 100%;
-    padding: 10px 40px; /* espaço pro cadeado e olho */
-    border: 1px solid #999;
-    border-radius: 4px;
-    font-size: 14px;
-    box-sizing: border-box;
-
-.campo-senha {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    margin: 10px auto;
-}
-
-.campo-senha input {
-    width: 100%;
-    padding: 10px 40px; /* espaço pro cadeado e olho */
+    padding: 10px 40px; /* espaço pros ícones */
     border: 1px solid #999;
     border-radius: 4px;
     font-size: 14px;
