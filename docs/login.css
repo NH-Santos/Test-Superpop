@@ -26,7 +26,7 @@
     max-width: 420px;
 }
 
-.input-group input {
+.campo-senha input {
     width: 100%;
     padding: 12px 44px; /* espaço pros dois ícones */
     border: 1px solid #d0d0d0;
@@ -35,7 +35,7 @@
     outline: none;
 }
 
-.input-group input:focus {
+.campo-senha input:focus {
     border-color: #6c63ff;
 }
 
