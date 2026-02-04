@@ -20,23 +20,20 @@
     margin: auto;
 }
 
-.input-group {
+.campo-senha {
     position: relative;
     width: 100%;
-    max-width: 420px;
+    max-width: 300px;
+    margin: 10px auto;
 }
 
 .campo-senha input {
     width: 100%;
-    padding: 12px 44px; /* espaço pros dois ícones */
-    border: 1px solid #d0d0d0;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-}
-
-.campo-senha input:focus {
-    border-color: #6c63ff;
+    padding: 10px 40px; /* espaço pro cadeado e olho */
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
 .icon-left,
@@ -44,15 +41,15 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 18px;
+    width: 16px;
     opacity: 0.6;
 }
 
 .icon-left {
-    left: 14px;
+    left: 10px;
 }
 
 .icon-right {
-    right: 14px;
+    right: 10px;
     cursor: pointer;
 }
