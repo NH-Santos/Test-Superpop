@@ -5,30 +5,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale="1">
         <link rel="icon" href="/Frontend/Public/P_logo_R-01.png">
-        <link rel="stylesheet" href="inicio.css">
+        <link rel="stylesheet" href="/Frontend/Public/css/inicio.css">
     </head>
 
     <body>
-        <header class="header">
-            <div class="header-container">
-                
-                <nav class="menu">
-                    <a href="#">Início</a>
-                    <a href="#">Como funciona</a>
-                    <a href="#">Sobre</a>
-                </nav>
+       <header>         
+            <!-- Header -->
+            <header class="header">
+                <button class="menu-btn" onclick="abrirMenu()">☰</button>
 
                 <div class="logo">
-                    <img src="Logo_popular.png" alt="Logo_popular">
-                    <span>Superpop</span>
+                    <img src="/Frontend/Public/Logo_popular.png" alt="Superpop">
+                    <span>Suuperpop</span>
                 </div>
 
                 <div class="actions">
                     <a href="#" class="login">Entrar</a>
-                    <a href="#" class="Cadastro">Cadastrar</a>
+                </div>
+            </header>
+
+            <!-- Overlay -->
+            <div class="overlay" onclick="fecharMenu()"></div>
+
+            <!-- Menu lateral -->
+            <aside class="sidebar">
+                <button class="close-btn" onclick="fecharMenu()">✕</button>
+
+                <div class="user-info">
+                    <div class="avatar">N</div>
+                    <span>Olá, Natanael</span>
                 </div>
 
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Enviar Superpop</a>
+                    <a href="#">Meus Superpops</a>
+                    <a href="#">Ranking</a>
+                    <a href="#">Sair</a>
+                </nav>
+            </aside>
+
+
+            <div class="actions">
+                <a href="#" class="login">Entrar</a>
+                <a href="#" class="Cadastro">Cadastrar</a>
             </div>
+
+            <script>
+                function abrirMenu() {
+                    document.querySelector('.sidebar').classList.add('active');
+                    document.querySelector('.overlay').classList.add('active');
+                }
+
+                function fecharMenu() {
+                    document.querySelector('.sidebar').classList.remove('active');
+                    document.querySelector('.overlay').classList.remove('active');
+                }
+            </script>
         </header>
     </body>
 </html>
