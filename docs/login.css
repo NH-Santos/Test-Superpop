@@ -1,70 +1,119 @@
-.card-login {
-width: 700px;
-background: color(white);
-border: 1px solid white;
-padding: 25px;
-box-shadow: 0 2px 6px rgba(0,0,0,1);
-margin: auto;
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Cabeçalho*/
+body {
+    background: #f2f2f2;
+    margin: 0;
+    padding: 40px 0;
+}
+
+/* CARD LOGIN */
+.card-login {
+    width: 700px;
+    background: #fff;
+    padding: 25px;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* HEADER */
 .header {
-width: 100%;
-display: flex;
-margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .header img {
-width: 100%;
-height: auto;
-margin: auto;
+    max-width: 200px;
+    margin-right: 20px;
 }
 
-.campo-usuario {
+.header-texto h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.header-texto h2 {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+}
+
+/* CAMPOS INPUT */
+.campo-input {
     position: relative;
-    width: 100%;
-    max-width: 300px;
-    margin: 10px auto;
+    width: 300px;
+    margin: 12px auto;
 }
 
-.campo-usuario input {
+.campo-input input {
     width: 100%;
-    padding: 10px 40px; /* espaço pro cadeado e olho */
+    padding: 10px 40px;
     border: 1px solid #999;
     border-radius: 4px;
     font-size: 14px;
-    box-sizing: border-box;
-
-.campo-senha {
-position: relative;
-width: 100%;
-max-width: 300px;
-margin: 10px auto;
 }
 
-.campo-senha input {
-width: 100%;
-padding: 10px 40px; /* espaço pro cadeado e olho */
-border: 1px solid #999;
-border-radius: 4px;
-font-size: 14px;
-box-sizing: border-box;
+.campo-input input:focus {
+    border-color: #d71920;
+    outline: none;
 }
 
+/* ÍCONES */
 .icon-left,
 .icon-right {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-width: 16px;
-opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    opacity: 0.6;
 }
 
 .icon-left {
-left: 10px;
+    left: 10px;
 }
 
 .icon-right {
-right: 10px;
-cursor: pointer;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* BOTÃO */
+.enviar-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-enviar {
+    padding: 8px 25px;
+    border: none;
+    border-radius: 4px;
+    background: #d71920;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-enviar:hover {
+    background: #b5161c;
+}
+
+/* LINK CRIAR CONTA */
+.semlogin {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.semlogin a {
+    color: #d71920;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.semlogin a:hover {
+    text-decoration: underline;
 }
