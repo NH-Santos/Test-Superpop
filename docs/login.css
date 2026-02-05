@@ -1,55 +1,70 @@
 .card-login {
-    width: 700px;
-    background: color(white);
-    border: 1px solid white;
-    padding: 25px;
-    box-shadow: 0 2px 6px rgba(0,0,0,1);
-    margin: auto;
+width: 700px;
+background: color(white);
+border: 1px solid white;
+padding: 25px;
+box-shadow: 0 2px 6px rgba(0,0,0,1);
+margin: auto;
 }
 
 /*Cabeçalho*/
 .header {
-    width: 100%;
-    display: flex;
-    margin-bottom: 30px;
+width: 100%;
+display: flex;
+margin-bottom: 30px;
 }
 
 .header img {
-    width: 100%;
-    height: auto;
-    margin: auto;
+width: 100%;
+height: auto;
+margin: auto;
 }
 
-.campo-input {
+.campo-usuario {
     position: relative;
     width: 100%;
     max-width: 300px;
     margin: 10px auto;
 }
 
-.campo-input input {
+.campo-usuario input {
     width: 100%;
-    padding: 10px 40px; /* espaço pros ícones */
+    padding: 10px 40px; /* espaço pro cadeado e olho */
     border: 1px solid #999;
     border-radius: 4px;
     font-size: 14px;
     box-sizing: border-box;
+
+.campo-senha {
+position: relative;
+width: 100%;
+max-width: 300px;
+margin: 10px auto;
+}
+
+.campo-senha input {
+width: 100%;
+padding: 10px 40px; /* espaço pro cadeado e olho */
+border: 1px solid #999;
+border-radius: 4px;
+font-size: 14px;
+box-sizing: border-box;
 }
 
 .icon-left,
 .icon-right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    opacity: 0.6;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 16px;
+opacity: 0.6;
 }
 
 .icon-left {
-    left: 10px;
+left: 10px;
 }
 
 .icon-right {
-    right: 10px;
-    cursor: pointer;
+right: 10px;
+cursor: pointer;
 }
