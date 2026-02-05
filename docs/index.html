@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>Página Inicial</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale="1">
-        <link rel="icon" href="P_logo_R-01.png">
-        <link rel="stylesheet" href="inicio.css">
-    </head>
+<head>
+    <title>Página Inicial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-       <header>         
-            <!-- Header -->
-            <header class="header">
-                <button class="menu-btn" onclick="abrirMenu()">☰</button>
+    <link rel="icon" href="P_logo_R-01.png">
+    <link rel="stylesheet" href="inicio.css">
+</head>
 
-                <div class="logo">
-                    <img src="Logo_popular.png" alt="Superpop">
-                    <span>Superpop</span>
-                </div>
+<body>
 
-                <div class="actions">
-                    <a href="login.html" class="login">Entrar</a>
-                </div>
-            </header>
+    <!-- HEADER FIXO -->
+    <header class="header">
+        <button class="menu-btn" onclick="abrirMenu()">☰</button>
 
-            <!-- Overlay -->
-            <div class="overlay" onclick="fecharMenu()"></div>
+        <div class="logo">
+            <img src="Logo_popular.png" alt="Superpop">
+            <span>Superpop</span>
+        </div>
 
-            <!-- Menu lateral -->
-            <aside class="sidebar">
-                <button class="close-btn" onclick="fecharMenu()">✕</button>
+        <div class="actions">
+            <a href="login.html" class="login">Entrar</a>
+            <a href="cadastro.html" class="Cadastro">Cadastrar</a>
+        </div>
+    </header>
 
-                <div class="user-info">
-                    <div class="avatar">N</div>
-                    <span>Olá, Natanael</span>
-                </div>
+    <!-- OVERLAY -->
+    <div class="overlay" onclick="fecharMenu()"></div>
 
-                <nav>
-                    <a href="index.html">Início</a>
-                    <a href="login.html">Enviar Superpop</a>
-                    <a href="#">Meus Superpops</a>
-                    <a href="#">Ranking</a>
-                    <a href="index.html">Sair</a>
-                </nav>
-            </aside>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <button class="close-btn" onclick="fecharMenu()">✕</button>
 
-            <div class="actions">
-                <a href="login.html" class="login">Entrar</a>
-                <a href="cadastro.html" class="Cadastro">Cadastrar</a>
-            </div>
+        <div class="user-info">
+            <div class="avatar">N</div>
+            <span>Olá, Natanael</span>
+        </div>
 
-            <script>
-                function abrirMenu() {
-                    document.querySelector('.sidebar').classList.add('active');
-                    document.querySelector('.overlay').classList.add('active');
-                }
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="login.html">Enviar Superpop</a>
+            <a href="#">Meus Superpops</a>
+            <a href="#">Ranking</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </aside>
 
-                function fecharMenu() {
-                    document.querySelector('.sidebar').classList.remove('active');
-                    document.querySelector('.overlay').classList.remove('active');
-                }
-            </script>
-        </header>
-    </body>
+    <!-- CONTEÚDO PRINCIPAL (vazio por enquanto) -->
+    <main>
+        <!-- Conteúdo da página -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="flooter">
+        © 2026 Superpop — Reconhecimento Popular Alimentos
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        function abrirMenu() {
+            document.querySelector('.sidebar').classList.add('active');
+            document.querySelector('.overlay').classList.add('active');
+        }
+
+        function fecharMenu() {
+            document.querySelector('.sidebar').classList.remove('active');
+            document.querySelector('.overlay').classList.remove('active');
+        }
+    </script>
+
+</body>
 </html>
