@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>Login Superpop</title>
-        <meta charset="UTF-8">
-        <meta name="viewport"  content="width=device-width, initial-scale=1">
-        <link rel="icon" href="P_logo_R-01.png" type="image/png">
-        <link rel="stylesheet" href="login.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Superpop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="P_logo_R-01.png" type="image/png">
+    <link rel="stylesheet" href="login.css">
+</head>
 
-    <body>
-        <form id="formlogin" class="card-login">
-            <div class="header">
-                <img src="Logo_popular.png" alt="Logo_popular">
-                <h1>Bem vindo ao Sistema de envio do Superpop</h1> 
-                <h2>Faça Login com a sua conta</h2>
-            </div>
+<body>
 
-            <br>
+<form class="card-login">
 
-            <div class="inline-field">
-                <i class="fas fa-lock"></i>
-                <input type="text" placeholder="Usuário" required>
-            </div>
+    <div class="header">
+        <img src="Logo_popular.png" alt="Logo Popular">
+        <div class="header-texto">
+            <h1>Bem-vindo ao Sistema de envio do Superpop</h1>
+            <h2>Faça login com a sua conta</h2>
+        </div>
+    </div>
 
-            <div class="campo-senha">
+    <!-- CAMPO USUÁRIO -->
+    <div class="campo-input">
+        <img src="usuario.png" class="icon-left" alt="Usuário">
+        <input type="text" placeholder="Usuário" required>
+    </div>
 
-                <img src="cadeado.png" class="icon-left" alt="Senha">
-                <input type="password" id="senha" placeholder="Senha" required>
+    <!-- CAMPO SENHA -->
+    <div class="campo-input">
+        <img src="cadeado.png" class="icon-left" alt="Senha">
 
-                <img
-                    src="olho.png"
-                    id="toggleSenha"
-                    class="icon-right"
-                    alt="Mostrar senha"
-                >
-            </div>
+        <input
+            type="password"
+            id="senha"
+            placeholder="Senha"
+            required
+        >
 
-            <div class="enviar-container">
-                <input type="submit" value="Login" class="btn-enviar">
-            </div>
-        </form>
+        <img
+            src="olho.png"
+            id="toggleSenha"
+            class="icon-right"
+            alt="Mostrar senha"
+        >
+    </div>
 
-        <br>
+    <div class="enviar-container">
+        <input type="submit" value="Login" class="btn-enviar">
+    </div>
 
-            <div class="semlogin">
-                <p>Ainda não possui conta? Crie aqui:</p>
-                <a hrel="cadastro.html">Criar Conta</a>
-            </div>
-    </body>
+</form>
+
+<div class="semlogin">
+    <p>Ainda não possui conta?</p>
+    <a href="#">Criar conta</a>
+</div>
 
 <script>
-  const senha = document.getElementById("senha");
-  const toggle = document.getElementById("toggleSenha");
+    const senha = document.getElementById("senha");
+    const toggle = document.getElementById("toggleSenha");
 
-  toggle.addEventListener("click", () => {
-    const isPassword = senha.type === "password";
-
-    senha.type = isPassword ? "text" : "password";
-    toggle.src = isPassword
-      ? "assets/icons/eye-open.svg"
-      : "assets/icons/eye-closed.svg";
-  });
+    toggle.addEventListener("click", () => {
+        const visivel = senha.type === "password";
+        senha.type = visivel ? "text" : "password";
+        toggle.src = visivel ? "visivel.png" : "olho.png";
+    });
 </script>
 
-
-
+</body>
 </html>
