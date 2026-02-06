@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Reconhecimento Superpop</title>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="P_logo_R-01.png" type="image/png">
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="superpop.css">
+        <script>
+            if (!localStorage.getItem("token")) {
+               window.location.href = "login.html"
+            }
+        </script>
+    </head>
+
+    <body>
+      <form id="formsuperpop" class="card">
+      
+        <div class="header-form">
+            <img src="SuperPop2.png" alt="Logo_popularcomleo">
+        </div>
+
+        <div class="inline-field">
+            <label>Colaborador:</label>
+            <input type="text" name="colaborador" required>
+        </div>
+
+        <div class="inline-field">
+            <label>Reconhecido por:</label>
+            <input type="text" name="reconhecido_por" required>
+        </div>
+
+        <br>
+
+        <div class="center-text">
+            Eu reconheço você pela prática do(s) valor(es) da empresa:
+        </div>
+
+        <div class="checkboxes">
+            <label>
+               <input type="checkbox" name="valores[]" value="Honestidade">
+               Honestidade
+            </label>
+            <label>
+               <input type="checkbox" name="valores[]" value="Respeito">
+               Respeito
+            </label>
+            <label>
+               <input type="checkbox" name="valores[]" value="Compromisso">
+               Compromisso
+            </label>
+        </div>     
+
+         <textarea name="observacoes" placeholder=""></textarea>
+
+      <div class="enviar-container">
+         <input type="submit" value="Enviar" class="btn-enviar">
+      </div>
+         
+    <div class="footer">
+
+        <div class="logo">
+            <img src="Logo_popular.png" alt="Logo Superpop">
+        </div>
+   </form>
+
+       <script src="form.js"></script>
+   </body>
+</html>
