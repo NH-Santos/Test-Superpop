@@ -224,3 +224,22 @@ body {
   font-size: 20px;
   margin-bottom: 18px;
 }
+
+.btn-superpop {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+
+  background-color: #b30000; /* vermelho Superpop */
+  color: #fff;
+  text-decoration: none;
+
+  font-weight: bold;
+  border-radius: 8px;
+
+  transition: background 0.3s;
+}
+
+.btn-superpop:hover {
+  background-color: #8f0000;
+}
