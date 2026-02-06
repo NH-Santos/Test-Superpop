@@ -225,7 +225,7 @@ body {
 .center-text {
   margin: 20px 0 5px;
   margin:20px;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 18px;
 }
 
@@ -240,6 +240,7 @@ body {
   text-decoration: none;
 
   font-weight: bold;
+  font-size:25px;
   border-radius: 8px;
 
   transition: background 0.3s;
