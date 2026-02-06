@@ -207,6 +207,7 @@ body {
 
 .header-texto h1 {
   margin: 10px;
+  margin-left:40px;
   font-size: 60px;
   border-top: 20px;
   padding: 10px;
@@ -216,12 +217,14 @@ body {
 
 .header-texto p {
   margin: 5px 0 0;
+  margin-left:45px;
   font-size: 45px;
   margin-bottom: 20px;
 }
 
 .center-text {
   margin: 20px 0 5px;
+  margin:20px;
   font-size: 20px;
   margin-bottom: 18px;
 }
@@ -229,6 +232,7 @@ body {
 .btn-superpop {
   display: inline-block;
   margin-top: 16px;
+  margin-left:60px;
   padding: 12px 24px;
 
   background-color: #b30000; /* vermelho Superpop */
