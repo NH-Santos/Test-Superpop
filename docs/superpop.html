@@ -5,7 +5,11 @@
         <meta charset="UTF-8">
         <meta name ="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="P_logo_R-01.png" type="image/png">
-
+        <script>
+            if (!localStorage.getItem("token")) {
+               window.location.href = "login.html"
+            }
+        </script>
         <style>
 
          @font-face {
