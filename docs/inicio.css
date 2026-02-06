@@ -207,7 +207,7 @@ body {
 
 .header-texto h1 {
   margin: 10px;
-  font-size: 50px;
+  font-size: 60px;
   border-top: 20px;
   padding: 10px;
   color:#a30d0a;
@@ -215,12 +215,12 @@ body {
 
 .header-texto p {
   margin: 5px 0 0;
-  font-size: 35px;
+  font-size: 45px;
   margin-bottom: 20px;
 }
 
 .center-text {
   margin: 20px 0 5px;
-  font-size: 35px;
+  font-size: 20px;
   margin-bottom: 18px;
 }
