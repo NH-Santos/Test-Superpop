@@ -1,0 +1,192 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= HEADER FIXO ================= */
+.header-fixo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* BOTÃO MENU */
+.menu-btn-fixo {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* LOGO */
+.logo-fixo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo-fixo img {
+  height: 35px;
+}
+
+/* AÇÕES (LOGIN / CADASTRO) */
+.actions-fixo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size:20px;
+}
+
+.login-fixo {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.Cadastro-fixo {
+  text-decoration: none;
+  background: #970606;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* ================= OVERLAY ================= */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 900;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100%;
+  background: #970606;
+  color: #ffffff;
+  padding: 24px 20px;
+  transition: left 0.3s ease;
+  z-index: 1001;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+/* BOTÃO FECHAR */
+.close-btn-fixo {
+  align-self: flex-end;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ================= USUÁRIO ================= */
+.user-info-fixo {
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-fixo {
+  width: 48px;
+  height: 48px;
+  background: #ffffff;
+  color: #970606;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-info-fixo span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ================= MENU ================= */
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 12px;
+  border-radius: 8px;
+
+  transition: background 0.2s, transform 0.1s;
+}
+
+.sidebar nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(4px);
+}
+
+/* DESTAQUE PARA SAIR */
+.sidebar nav a:last-child {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: bold;
+}
+
+
+/* ================= FOOTER ================= */
+.flooter-fixo {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: #f7f7f7;
+  font-size: 18px;
+  border-top: 1px solid #ddd;
+}
