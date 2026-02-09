@@ -57,7 +57,7 @@
   font-weight: 500;
 }
 
-.Cadastro-fixo {
+.cadastro-fixo {
   text-decoration: none;
   background: #970606;
   color: #fff;
@@ -180,7 +180,7 @@
 
 
 /* ================= FOOTER ================= */
-.flooter-fixo {
+.footer-fixo {
   position: fixed;
   bottom: 0;
   width: 100%;
