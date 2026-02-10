@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Superpop</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="P_logo_R-01.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- HEADER FIXO -->
+    <header class="header-fixo">
+        <button class="menu-btn-fixo" onclick="abrirMenu()">☰</button>
+
+        <div class="logo-fixo">
+            <img src="Logo_popular.png" alt="Superpop">
+            <span>Superpop</span>
+        </div>
+
+        <div class="actions-fixo">
+            <a href="login.html" class="login-fixo">Entrar</a>
+            <a href="cadastro.html" class="cadastro-fixo">Cadastrar</a>
+        </div>
+    </header>
+
+    <!-- OVERLAY -->
+    <div class="overlay" onclick="fecharMenu()"></div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <button class="close-btn-fixo" onclick="fecharMenu()">✕</button>
+
+        <div class="user-info-fixo">
+            <div class="avatar-fixo">N</div>
+            <span>Olá, visitante</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="login.html">Enviar Superpop</a>
+            <a href="#">Meus Superpop's</a>
+            <a href="#">Ranking</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-fixo">
+        © 2026 Superpop — Reconhecimento Popular Alimentos
+    </footer>
+
+    <!-- SCRIPT MOSTRAR/OCULTAR SENHA -->
+    <script>
+        const senha = document.getElementById("senha");
+        const toggle = document.getElementById("toggleSenha");
+
+        toggle.addEventListener("click", () => {
+            const visivel = senha.type === "password";
+            senha.type = visivel ? "text" : "password";
+            toggle.src = visivel ? "visivel.png" : "olho.png";
+        });
+    </script>
+
+    <!-- SCRIPT MENU -->
+    <script>
+        function abrirMenu() {
+            document.querySelector('.sidebar').classList.add('active');
+            document.querySelector('.overlay').classList.add('active');
+        }
+
+        function fecharMenu() {
+            document.querySelector('.sidebar').classList.remove('active');
+            document.querySelector('.overlay').classList.remove('active');
+        }
+    </script>
+
+    <!-- SCRIPT BACKEND (FUTURO) -->
+    <!--
+    <script src="../js/auth.js"></script>
+    -->
+
+</body>
+</html>
