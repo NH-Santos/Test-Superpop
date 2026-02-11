@@ -36,7 +36,7 @@ document
       alert("Login realizado com sucesso!");
 
       // 🚀 redireciona para página principal
-      window.location.href = "/index.html";
+      window.location.href = "/Test-Superpop";
 
     } catch (error) {
       console.error("Erro no login:", error);
