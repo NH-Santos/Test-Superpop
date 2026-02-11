@@ -30,7 +30,7 @@ document
 
       // 🔐 salva token
       localStorage.setItem("token", result.token);
-      localStorage.setItem("nome", result.nome);
+      localStorage.setItem("login", result.login);
       localStorage.setItem("perfil", result.perfil);
 
       alert("Login realizado com sucesso!");
