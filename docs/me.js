@@ -7,7 +7,7 @@ async function carregarUsuario() {
     }
 
     try {
-        const response = await fetch("/api/auth/me", {
+        const response = await fetch("https://absorbable-karleen-pseudolobar.ngrok-free.dev/api/auth/me", {
             headers: {
                 "Authorization": `Bearer ${token}`
             }
