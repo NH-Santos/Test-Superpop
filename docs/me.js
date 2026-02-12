@@ -2,7 +2,6 @@ async function carregarUsuario() {
     const token = localStorage.getItem("token");
 
     if (!token) {
-        window.location.href = "login.html";
         return;
     }
 
@@ -15,7 +14,7 @@ async function carregarUsuario() {
 
         if (!response.ok) {
             localStorage.removeItem("token");
-            window.location.href = "Test-Superpop";
+            window.location.href = "index.html";
             return;
         }
 
