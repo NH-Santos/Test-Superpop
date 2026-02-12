@@ -1,10 +1,7 @@
-document.getElementById("btnLogout").addEventListener("click", function () {
-    // Remove o token
+document.getElementById("btnLogout").addEventListener("click", function (e) {
+    e.preventDefault();
+
     localStorage.removeItem("token");
 
-    // Opcional: limpar qualquer outro dado salvo
-    localStorage.removeItem("usuario");
-
-    // Redireciona para login
-    window.location.href = "/login.html";
+    window.location.href = "login.html";
 });
