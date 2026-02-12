@@ -39,8 +39,8 @@
         <button class="close-btn-fixo" onclick="fecharMenu()">✕</button>
 
         <div class="user-info-fixo">
-            <div class="avatar-fixo">N</div>
-            <span>Olá, visitante</span>
+            <div class="avatar-fixo" id="avatarInicial">V</div>
+            <span id="saudacaoUsuario">Olá, visitante</span>
         </div>
 
         <nav>
@@ -125,12 +125,11 @@
             document.querySelector('.overlay').classList.remove('active');
         }
     </script>
-
-    <!-- SCRIPT BACKEND (FUTURO) -->
-    <!--
-    <script src="../js/auth.js"></script>
-    -->
+    
+    <script src="usuario.js"></script>
+    <script src="menu.js"></script>
 
 </body>
 </html>
+
 
