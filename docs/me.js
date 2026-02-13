@@ -21,7 +21,7 @@ async function carregarUsuario() {
         const usuario = await response.json();
 
         // Escolha qual você quer mostrar:
-        document.getElementById("reconhecidoPor").value = usuario.nome_reduzido;
+        document.getElementById("reconhecido_por").value = usuario.nome_reduzido;
         // ou:
         // document.getElementById("reconhecidoPor").value = usuario.nome_completo;
 
