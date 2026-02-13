@@ -8,7 +8,7 @@ async function carregarUsuario() {
     try {
         const response = await fetch("https://absorbable-karleen-pseudolobar.ngrok-free.dev/auth/me", {
             headers: {
-                "Authorization": `Bearer ${token}`
+                "Authorization": "Bearer" + token
             }
         });
 
@@ -20,10 +20,7 @@ async function carregarUsuario() {
 
         const usuario = await response.json();
 
-        // Escolha qual você quer mostrar:
         document.getElementById("reconhecido_por").value = usuario.nome_reduzido;
-        // ou:
-        // document.getElementById("reconhecidoPor").value = usuario.nome_completo;
 
     } catch (error) {
         console.error("Erro ao carregar usuário:", error);
