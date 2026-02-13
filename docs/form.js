@@ -12,10 +12,16 @@ document
       observacoes: formData.get("observacoes")
     };
 
+    const token = localStorage.getItem("token");
+    console.log("TOKEN NO FORM", token);
+
     try {
       const response = await fetch("https://absorbable-karleen-pseudolobar.ngrok-free.dev/enviar", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + token
+        },
         body: JSON.stringify(dados)
       });
 
