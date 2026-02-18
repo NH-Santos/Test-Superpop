@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             try {
                 const response = await fetch(
-                    `https://absorbable-karleen-pseudolobar.ngrok-free.dev/api/colaboradores?search=${encodeURIComponent(termo)}`,
+                    `https://absorbable-karleen-pseudolobar.ngrok-free.dev/api/auth/colaboradores?search=${encodeURIComponent(termo)}`,
                     {
                         headers: {
                             "Authorization": `Bearer ${token}`,
