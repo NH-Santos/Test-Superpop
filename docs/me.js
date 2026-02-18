@@ -15,15 +15,27 @@ async function carregarUsuario() {
       }
     });
 
+    if (response.status === 401) {
+      localStorage.removeItem("token");
+      window.location.href = "login.html";
+      return;
+    }
+
     if (!response.ok) {
       throw new Error("Erro ao buscar usuário");
     }
 
     const usuario = await response.json();
 
+    const nomeCompleto = usuario.nome_completo || "";
+    const setor = usuario.setor || "";
+
+    const textoFinal = `${nomeCompleto} - ${setor}`;
+
     const campo = document.getElementById("reconhecido_por");
+
     if (campo) {
-      campo.value = usuario.nome_reduzido;
+      campo.value = textoFinal;
     }
 
   } catch (error) {
