@@ -173,7 +173,7 @@ textarea {
     width: 100%;
 }
 
-.lista-colaboradores {
+#lista-colaboradores {
     position: absolute;
     top: 100%;
     left: 0;
@@ -190,12 +190,12 @@ textarea {
     z-index: 999;
 }
 
-.lista-colaboradores li {
+#lista-colaboradores li {
     padding: 8px 12px;
     cursor: pointer;
     font-size: 14px;
 }
 
-.lista-colaboradores li:hover {
+#lista-colaboradores li:hover {
     background-color: #f0f0f0;
 }
