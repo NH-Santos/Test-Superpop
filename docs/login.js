@@ -33,9 +33,6 @@ document
       localStorage.setItem("login", result.login);
       localStorage.setItem("perfil", result.perfil);
 
-      alert("Login realizado com sucesso!");
-
-      // 🚀 redireciona para página principal
       window.location.href = "index.html";
 
     } catch (error) {
