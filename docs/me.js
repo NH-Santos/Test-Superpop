@@ -28,7 +28,7 @@ async function carregarUsuario() {
     }
 
   } catch (error) {
-    console.error("Erro ao carregar usuário:", error);
+    return;
   }
 }
 
