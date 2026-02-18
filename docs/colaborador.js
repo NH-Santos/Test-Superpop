@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 lista.innerHTML = "";
 
                 colaboradores.forEach(col => {
-                    const li = document.createElement("div");
+                    const li = document.createElement("li");
                     li.textContent = `${col.nome_completo} - ${col.setor}`;
 
                     li.addEventListener("click", () => {
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
 
                     lista.appendChild(li);
+                    console.log("Adicionado:", li)
                 });
 
             } catch (error) {
