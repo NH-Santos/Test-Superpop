@@ -1,4 +1,4 @@
-easync function carregarUsuario() {
+async function carregarUsuario() {
   const token = localStorage.getItem("token");
 
   console.log("Token encontrado:", token);
