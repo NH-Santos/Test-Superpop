@@ -24,11 +24,11 @@ async function carregarUsuario() {
 
     const campo = document.getElementById("reconhecido_por");
     if (campo) {
-      campo.value = usuario.nome_completo;
+      campo.value = usuario.nome_reduzido;
     }
 
   } catch (error) {
-    return;
+    console.error("Erro ao carregar usuário:", error);
   }
 }
 
