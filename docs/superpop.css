@@ -211,9 +211,9 @@ textarea {
 #listaColaboradores li {
     padding: 10px 14px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 28px;
 }
 
-#lista-colaboradores li:hover {
+#listaColaboradores li:hover {
     background-color: #f0f0f0;
 }
