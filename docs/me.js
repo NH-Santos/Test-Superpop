@@ -24,7 +24,7 @@ async function carregarUsuario() {
 
     const campo = document.getElementById("reconhecido_por");
     if (campo) {
-      campo.value = usuario.nome_reduzido;
+      campo.value = usuario.nome_completo;
     }
 
   } catch (error) {
