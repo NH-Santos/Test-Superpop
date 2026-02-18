@@ -64,6 +64,12 @@ card {
     outline: none;
 }
 
+.inline-field-colaborador {
+    font-weight: bold;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
     /*Texto Central*/
 .center-text {
     text-align: center;
