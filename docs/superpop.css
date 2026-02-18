@@ -173,6 +173,16 @@ textarea {
     width: 100%;
 }
 
+#colaboradorInput {
+    border:none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(46, 46, 46);
+    font-size: 15px;
+    padding: 2px 0;
+    outline: none;
+    width: 250px;
+}
+
 #lista-colaboradores {
     position: absolute;
     top: 100%;
