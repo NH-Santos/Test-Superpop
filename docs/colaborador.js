@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
 
                     lista.appendChild(li);
-                    console.log("Adicionado:", li)
                 });
 
             } catch (error) {
