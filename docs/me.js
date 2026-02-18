@@ -1,30 +1,49 @@
 async function carregarUsuario() {
-    const token = localStorage.getItem("token");
+  const token = localStorage.getItem("token");
 
-    if (!token) {
-        return;
+  console.log("Token encontrado:", token);
+
+  if (!token) {
+    console.warn("Sem token, redirecionando para login...");
+    window.location.href = "/login.html";
+    return;
+  }
+
+  try {
+    const response = await fetch("https://SEU_BACKEND/auth/me", {
+      method: "GET",
+      headers: {
+        "Authorization": `Bearer ${token}`,
+        "Content-Type": "application/json"
+      }
+    });
+
+    console.log("Status da resposta:", response.status);
+
+    if (response.status === 401) {
+      console.warn("Token inválido ou expirado");
+      localStorage.removeItem("token");
+      window.location.href = "/login.html";
+      return;
     }
 
-    try {
-        const response = await fetch("https://absorbable-karleen-pseudolobar.ngrok-free.dev/api/auth/me", {
-            headers: {
-                "Authorization": "Bearer " + token
-            }
-        });
-
-        if (!response.ok) {
-            localStorage.removeItem("token");
-            window.location.href = "index.html";
-            return;
-        }
-
-        const usuario = await response.json();
-
-        document.getElementById("reconhecido_por").value = usuario.nome_reduzido;
-
-    } catch (error) {
-        console.error("Erro ao carregar usuário:", error);
+    if (!response.ok) {
+      throw new Error("Erro ao buscar usuário");
     }
+
+    const usuario = await response.json();
+    console.log("Usuário recebido:", usuario);
+
+    // Preencher campo
+    const campo = document.getElementById("reconhecido_por");
+
+    if (campo) {
+      campo.value = usuario.nome_reduzido || "";
+    }
+
+  } catch (error) {
+    console.error("Erro ao carregar usuário:", error);
+  }
 }
 
-carregarUsuario();
+document.addEventListener("DOMContentLoaded", carregarUsuario);
