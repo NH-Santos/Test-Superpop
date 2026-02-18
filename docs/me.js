@@ -1,4 +1,4 @@
-async function carregarUsuario() {
+easync function carregarUsuario() {
   const token = localStorage.getItem("token");
 
   console.log("Token encontrado:", token);
@@ -10,7 +10,7 @@ async function carregarUsuario() {
   }
 
   try {
-    const response = await fetch("https://SEU_BACKEND/auth/me", {
+    const response = await fetch("https://absorbable-karleen-pseudolobar.ngrok-free.dev/api/auth/me", {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${token}`,
