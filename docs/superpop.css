@@ -176,7 +176,7 @@ textarea {
 /* Autocomplete Colaborador */
 
 .autocomplete-container {
-    position: absolute;
+    position: relative;
     width: 100%;
     margin-bottom: 25px;
 }
@@ -192,7 +192,7 @@ textarea {
 }
 
 #listaColaboradores {
-    position: static;
+    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
@@ -211,7 +211,7 @@ textarea {
 #listaColaboradores li {
     padding: 10px 14px;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 #listaColaboradores li:hover {
