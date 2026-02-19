@@ -6,7 +6,7 @@ document
     const formData = new FormData(e.target);
 
     const dados = {
-      colaborador: formData.get("colaborador"),
+      colaborador: formData.get("colaboradorInput"),
       reconhecido_por: formData.get("reconhecido_por"),
       valores: formData.getAll("valores[]"),
       observacoes: formData.get("observacoes")
