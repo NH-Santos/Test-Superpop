@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     li.textContent = `${col.nome_completo} - ${col.setor}`;
 
                     li.addEventListener("click", () => {
-                        input.value = col.nome_completo;
+                        input.value = `${col.nome_completo} - ${col.setor}`;
                         lista.innerHTML = "";
                     });
 
