@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+edocument.addEventListener("DOMContentLoaded", () => {
 
     const input = document.getElementById("colaboradorInput");
     const lista = document.getElementById("listaColaboradores");
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     li.textContent = `${col.nome_completo} - ${col.setor}`;
 
                     li.addEventListener("click", () => {
-                        input.value = `${col.nome_completo} - ${col.setor}`;
+                        input.value = `${col.nome_completo}- ${col.setor}`;
                         lista.innerHTML = "";
                     });
 
