@@ -30,7 +30,7 @@ async function carregarUsuario() {
     const nomeCompleto = usuario.nome_completo || "";
     const setor = usuario.setor || "";
 
-    const textoFinal = `${nomeCompleto} - ${setor}`;
+    const textoFinal = `${nomeCompleto}- ${setor}`;
 
     const campo = document.getElementById("reconhecido_por");
 
